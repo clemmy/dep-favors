@@ -5,11 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#fa6a6a">
+   >
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@android:id/list" />
+        android:background="#fff"
+        android:paddingLeft = "16dp"
+        android:paddingRight = "16dp"
+        android:id="@android:id/list"
+        android:drawSelectorOnTop="false"
+        android:divider="#fff"
+        android:dividerHeight="15dp" />
+
     <!--<TextView-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="match_parent"-->

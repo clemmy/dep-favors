@@ -17,7 +17,7 @@ public class PostFragment extends ListFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_posts, container, false);
-        String[] values = {"asdf", "asdkfjaksd", "asdfjkj"};
+        String[] values = {"post1", "post2", "post3", "post4", "post5"};
         PostAdapter adapter = new PostAdapter(getActivity(),values);
         setListAdapter(adapter);
         return view;

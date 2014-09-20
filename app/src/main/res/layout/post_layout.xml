@@ -1,42 +1,54 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
     android:layout_height="120dp"
     android:clickable="false"
-    android:padding="16dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:background="#ffff5671"
     android:weightSum="1">
 
-    <!--<ImageView-->
-    <!--android:layout_width="84dp"-->
-    <!--android:layout_height="84dp" />-->
+    <ImageView
+    android:layout_width="70dp"
+    android:layout_height="70dp" />
+
     <LinearLayout
         android:layout_height="match_parent"
         android:layout_width="wrap_content"
         android:orientation="vertical">
+
         <TextView
             android:id="@+id/post_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/default_title"
-            android:paddingLeft="8dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
             android:paddingTop="3dp"
-            android:paddingBottom="2dp"
+            android:paddingBottom="0dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/post_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/default_category"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="3dp"
             android:layout_weight="1"/>
         <TextView
             android:id="@+id/post_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/default_description"
-            android:paddingBottom="3dp"
-            android:layout_weight="2"/>
-        <TextView
-            android:id="@+id/post_category"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/default_category"
-            android:paddingLeft="8dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
             android:paddingTop="3dp"
             android:paddingBottom="3dp"
-            android:layout_weight="1"/>
+            android:layout_weight="2"/>
+
+
 
     </LinearLayout>
 

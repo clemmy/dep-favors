@@ -1,14 +1,17 @@
-package com.thunder4.favors;
+package com.thunder4.favors.fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.ListFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+
+import com.thunder4.favors.APostActivity;
+import com.thunder4.favors.R;
+import com.thunder4.favors.adapters.PostAdapter;
 
 /**
  * Created by raywan on 2014-09-20.

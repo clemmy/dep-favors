@@ -1,4 +1,4 @@
-package com.thunder4.favors;
+package com.thunder4.favors.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -6,6 +6,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.thunder4.favors.R;
 
 /**
  * Created by raywan on 2014-09-20.

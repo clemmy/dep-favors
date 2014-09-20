@@ -3,14 +3,15 @@
     android:layout_width="match_parent"
     android:layout_height="120dp"
     android:clickable="false"
+    android:paddingTop="15dp"
     android:paddingLeft="15dp"
     android:paddingRight="15dp"
     android:background="#ffff5671"
     android:weightSum="1">
 
     <ImageView
-    android:layout_width="70dp"
-    android:layout_height="70dp" />
+    android:layout_width="85dp"
+    android:layout_height="85dp" />
 
     <LinearLayout
         android:layout_height="match_parent"

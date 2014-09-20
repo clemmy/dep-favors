@@ -27,6 +27,7 @@ public class PostAdapter extends ArrayAdapter<String> {
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View rowView = inflater.inflate(R.layout.post_layout, parent, false);
         TextView title = (TextView) rowView.findViewById(R.id.post_title);
+        TextView description = (TextView) rowView.findViewById(R.id.post_description);
         title.setText(values[position]);
         return rowView;
     }

@@ -3,6 +3,7 @@ package com.thunder4.favors;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
@@ -66,6 +67,9 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
         int id = item.getItemId();
         if (id == R.id.action_settings) {
             return true;
+        } else if (id == R.id.post_button) {
+            Intent intent = new Intent(this, PostActivity.class);
+            startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
     }

@@ -4,5 +4,10 @@
     <string name="app_name">Favors</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="default_title">Title</string>
+    <string name="default_description">Description</string>
+    <string name="default_category">Category</string>
+    <string name="title_activity_apost">APostActivity</string>
+    <string name="title_activity_post">PostActivity</string>
 
 </resources>

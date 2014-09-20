@@ -2,10 +2,10 @@
 <merger version="2" >
 
     <dataSet config="main" >
-        <source path="/Users/raywan/AndroidStudioProjects/Favors/facebook/src/main/assets" />
+        <source path="C:\Users\Guozhen\Documents\GitHub\favors\favors\facebook\src\main\assets" />
     </dataSet>
     <dataSet config="debug" >
-        <source path="/Users/raywan/AndroidStudioProjects/Favors/facebook/src/debug/assets" />
+        <source path="C:\Users\Guozhen\Documents\GitHub\favors\favors\facebook\src\debug\assets" />
     </dataSet>
 
 </merger>

@@ -10,7 +10,6 @@ import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
 
-
 public class MainActivity extends FragmentActivity implements ActionBar.TabListener {
 
     private ViewPager viewPager;
@@ -49,6 +48,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
             public void onPageScrollStateChanged(int i) {
             }
         });
+
     }
 
 

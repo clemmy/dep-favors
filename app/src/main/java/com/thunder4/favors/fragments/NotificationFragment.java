@@ -11,7 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
-import com.thunder4.favors.APostActivity;
 import com.thunder4.favors.R;
 import com.thunder4.favors.adapters.NotificationAdapter;
 import com.thunder4.favors.models.Notification;

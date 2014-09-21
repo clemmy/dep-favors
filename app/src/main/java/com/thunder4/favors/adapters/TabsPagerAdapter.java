@@ -25,7 +25,7 @@ public class TabsPagerAdapter extends FragmentPagerAdapter {
             case 1:
                 return new NegotiationFragment();
             case 2:
-                return new NotificationFragment();
+                //return new NotificationFragment();
             case 3:
                 return new ProfileFragment();
         }

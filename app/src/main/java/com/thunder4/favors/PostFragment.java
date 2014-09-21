@@ -23,8 +23,11 @@ public class PostFragment extends ListFragment {
         Post post2 = new Post("post2","category", "description", null);
         Post post3 = new Post("post3","category", "description", null);
         Post post4 = new Post("post4","category", "description", null);
+        Post post5 = new Post("post5","category", "description", null);
+        Post post6 = new Post("post6","category", "description", null);
+        Post post7 = new Post("post7","category", "description", null);
 
-        Post[] posts = {post1, post2, post3, post4};
+        Post[] posts = {post1, post2, post3, post4,post5,post6,post7};
 
         PostAdapter adapter = new PostAdapter(getActivity(),posts);
         setListAdapter(adapter);

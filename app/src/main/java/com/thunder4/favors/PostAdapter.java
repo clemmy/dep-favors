@@ -34,6 +34,9 @@ public class PostAdapter extends ArrayAdapter<Post> {
         TextView category = (TextView) rowView.findViewById(R.id.post_category);
         ImageView profile = (ImageView) rowView.findViewById(R.id.post_profile);
         title.setText(posts[position].titleField);
+        category.setText(posts[position].catField);
+        description.setText(posts[position].descriptField);
+        profile.setImageBitmap(posts[position].profilePic);
         return rowView;
     }
 }

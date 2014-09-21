@@ -29,7 +29,7 @@ public class NotificationAdapter extends ArrayAdapter<Notification> {
     public View getView(int position, View convertView, ViewGroup parent) {
         LayoutInflater inflater = (LayoutInflater) context
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View rowView = inflater.inflate(R.layout.post_layout, parent, false);
+        View rowView = inflater.inflate(R.layout.notification_layout, parent, false);
         TextView description = (TextView) rowView.findViewById(R.id.notification_description);
         ImageView profile = (ImageView) rowView.findViewById(R.id.notification_profile);
         description.setText(notifs[position].descriptField);

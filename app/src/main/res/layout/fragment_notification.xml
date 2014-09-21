@@ -10,8 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#fff"
-        android:paddingLeft = "0dp"
-        android:paddingRight = "0dp"
+        android:paddingLeft = "15dp"
+        android:paddingRight = "15dp"
         android:id="@android:id/list"
         android:drawSelectorOnTop="false"
         android:dividerHeight="1dp" />

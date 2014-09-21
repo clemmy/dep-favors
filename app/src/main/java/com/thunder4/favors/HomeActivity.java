@@ -9,6 +9,7 @@ import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.thunder4.favors.DAL.DBManager;
 import com.thunder4.favors.adapters.TabsPagerAdapter;
 
 
@@ -23,6 +24,8 @@ public class HomeActivity extends FragmentActivity implements ActionBar.TabListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        String x = DBManager.GetAllPostsInDescOrder();
 
         viewPager = (ViewPager) findViewById(R.id.pager);
         actionBar = getActionBar();

@@ -32,6 +32,8 @@ public class PostFragment extends ListFragment {
         Post post7 = new Post("post7","category", "description", null);
 
         Post[] posts = {post1, post2, post3, post4,post5,post6,post7};
+        //TODO: populate posts with dal
+
 
         PostAdapter adapter = new PostAdapter(getActivity(),posts);
         setListAdapter(adapter);

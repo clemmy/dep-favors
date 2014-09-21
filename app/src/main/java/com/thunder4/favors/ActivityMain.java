@@ -22,6 +22,7 @@ import com.facebook.Response;
 import com.facebook.Session;
 import com.facebook.SessionState;
 import com.facebook.model.GraphUser;
+import com.thunder4.favors.DAL.DBManager;
 import com.thunder4.favors.R;
 
 import java.security.GeneralSecurityException;
@@ -80,7 +81,7 @@ public class ActivityMain extends Activity implements View.OnClickListener{
 
     @Override
     public void onClick(View view) {
-        System.out.println("HELLO");
+
         final Intent homeActivityIntent = new Intent(this, HomeActivity.class);
 
 //        Session.openActiveSession(this, true, new Session.StatusCallback() {

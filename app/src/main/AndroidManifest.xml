@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name=".HomeActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,26 +19,26 @@
         <activity
             android:name=".APostActivity"
             android:label="@string/title_activity_apost"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".HomeActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.thunder4.favors.MainActivity" />
+                android:value="com.thunder4.favors.HomeActivity" />
         </activity>
         <activity
             android:name=".PostActivity"
             android:label="@string/title_activity_post"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".HomeActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.thunder4.favors.MainActivity" />
+                android:value="com.thunder4.favors.HomeActivity" />
         </activity>
         <activity
             android:name=".NegotiationActivity"
             android:label="@string/title_activity_negotiation"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".HomeActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.thunder4.favors.MainActivity" />
+                android:value="com.thunder4.favors.HomeActivity" />
         </activity>
         <activity
             android:name=".LoginActivity"

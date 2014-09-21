@@ -12,7 +12,7 @@ import android.view.MenuItem;
 import com.thunder4.favors.adapters.TabsPagerAdapter;
 
 
-public class MainActivity extends FragmentActivity implements ActionBar.TabListener {
+public class HomeActivity extends FragmentActivity implements ActionBar.TabListener {
 
     private ViewPager viewPager;
     private TabsPagerAdapter tpAdapter;
@@ -22,7 +22,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_home);
 
         viewPager = (ViewPager) findViewById(R.id.pager);
         actionBar = getActionBar();

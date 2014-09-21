@@ -10,6 +10,6 @@
     <string name="title_activity_apost">APostActivity</string>
     <string name="title_activity_post">PostActivity</string>
     <string name="title_activity_negotiation">NegotiationActivity</string>
-    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_main">MainActivity</string>
 
 </resources>

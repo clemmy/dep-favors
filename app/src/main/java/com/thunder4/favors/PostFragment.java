@@ -17,8 +17,16 @@ public class PostFragment extends ListFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_posts, container, false);
-        String[] values = {"post1", "post2", "post3", "post4", "post5"};
-        PostAdapter adapter = new PostAdapter(getActivity(),values);
+
+        //test posts please ignore
+        Post post1 = new Post("post1","category", "description", null);
+        Post post2 = new Post("post2","category", "description", null);
+        Post post3 = new Post("post3","category", "description", null);
+        Post post4 = new Post("post4","category", "description", null);
+
+        Post[] posts = {post1, post2, post3, post4};
+
+        PostAdapter adapter = new PostAdapter(getActivity(),posts);
         setListAdapter(adapter);
         return view;
     }

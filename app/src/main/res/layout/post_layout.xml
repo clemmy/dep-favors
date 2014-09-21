@@ -6,14 +6,19 @@
     android:paddingTop="15dp"
     android:paddingLeft="15dp"
     android:paddingRight="15dp"
-    android:background="#ffff5671"
+    android:background="#fff"
     android:weightSum="1">
+    <!--android:background="#ffff5671"-->
 
     <ImageView
-    android:layout_width="85dp"
-    android:layout_height="85dp" />
+        android:id = "@+id/post_profile"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+
+        />
 
     <LinearLayout
+
         android:layout_height="match_parent"
         android:layout_width="wrap_content"
         android:orientation="vertical">
@@ -23,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/default_title"
-            android:paddingLeft="50dp"
+            android:paddingLeft="0dp"
             android:paddingRight="50dp"
             android:paddingTop="3dp"
             android:paddingBottom="0dp"
@@ -33,7 +38,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/default_category"
-            android:paddingLeft="50dp"
+            android:paddingLeft="0dp"
             android:paddingRight="50dp"
             android:paddingTop="0dp"
             android:paddingBottom="3dp"
@@ -43,7 +48,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/default_description"
-            android:paddingLeft="50dp"
+            android:paddingLeft="0dp"
             android:paddingRight="50dp"
             android:paddingTop="3dp"
             android:paddingBottom="3dp"

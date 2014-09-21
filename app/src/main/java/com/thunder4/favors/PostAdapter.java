@@ -5,19 +5,22 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 /**
  * Created by raywan on 2014-09-20.
  */
-public class PostAdapter extends ArrayAdapter<String> {
+public class PostAdapter extends ArrayAdapter<Post> {
     private final Context context;
-    private final String[] values;
+    private final Post[] posts;
 
-    public PostAdapter(Context context, String[] values) {
-        super(context, R.layout.post_layout, values);
+    public PostAdapter(Context context, Post[] posts) {
+        super(context, R.layout.post_layout, posts);
         this.context = context;
-        this.values = values;
+        this.posts = posts;
     }
 
     @Override
@@ -28,7 +31,9 @@ public class PostAdapter extends ArrayAdapter<String> {
         View rowView = inflater.inflate(R.layout.post_layout, parent, false);
         TextView title = (TextView) rowView.findViewById(R.id.post_title);
         TextView description = (TextView) rowView.findViewById(R.id.post_description);
-        title.setText(values[position]);
+        TextView category = (TextView) rowView.findViewById(R.id.post_category);
+        ImageView profile = (ImageView) rowView.findViewById(R.id.post_profile);
+        title.setText(posts[position].titleField);
         return rowView;
     }
 }

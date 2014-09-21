@@ -23,6 +23,34 @@
             </intent-filter>
         </activity>
         <activity android:name="com.facebook.LoginActivity" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".APostActivity"
+            android:label="@string/title_activity_apost"
+            android:parentActivityName=".HomeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thunder4.favors.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".PostActivity"
+            android:label="@string/title_activity_post"
+            android:parentActivityName=".HomeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thunder4.favors.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".NegotiationActivity"
+            android:label="@string/title_activity_negotiation"
+            android:parentActivityName=".HomeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thunder4.favors.HomeActivity" />
+        </activity>
     </application>
 
 </manifest>

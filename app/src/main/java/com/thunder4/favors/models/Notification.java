@@ -1,4 +1,4 @@
-package com.thunder4.favors;
+package com.thunder4.favors.models;
 
 import android.graphics.Bitmap;
 

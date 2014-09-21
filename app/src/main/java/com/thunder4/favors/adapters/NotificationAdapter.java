@@ -1,4 +1,4 @@
-package com.thunder4.favors;
+package com.thunder4.favors.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,6 +7,9 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.thunder4.favors.R;
+import com.thunder4.favors.models.Notification;
 
 /**
 * Created by Guozhen on 2014-09-20.

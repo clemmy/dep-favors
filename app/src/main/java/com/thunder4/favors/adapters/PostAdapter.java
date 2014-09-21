@@ -1,4 +1,4 @@
-package com.thunder4.favors;
+package com.thunder4.favors.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,7 +8,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+import com.thunder4.favors.R;
+import com.thunder4.favors.models.Post;
 
 /**
  * Created by raywan on 2014-09-20.

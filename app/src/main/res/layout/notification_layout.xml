@@ -26,7 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/default_description"
-            android:paddingLeft="50dp"
+            android:paddingLeft="0dp"
             android:paddingRight="50dp"
             android:paddingTop="3dp"
             android:paddingBottom="3dp"

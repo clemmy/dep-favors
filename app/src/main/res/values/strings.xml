@@ -12,5 +12,5 @@
     <string name="title_activity_post">PostActivity</string>
     <string name="title_activity_negotiation">NegotiationActivity</string>
     <string name="title_activity_main">MainActivity</string>
-
+    <string name="fb_login_btn">Log in with Facebook</string>
 </resources>

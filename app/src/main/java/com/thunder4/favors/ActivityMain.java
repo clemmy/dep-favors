@@ -1,6 +1,10 @@
 package com.thunder4.favors;
 
 import android.app.Activity;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
+import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
@@ -11,9 +15,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
+import com.facebook.Request;
+import com.facebook.Response;
 import com.facebook.Session;
 import com.facebook.SessionState;
+import com.facebook.model.GraphUser;
 import com.thunder4.favors.R;
 
 import java.security.GeneralSecurityException;
@@ -72,13 +80,72 @@ public class ActivityMain extends Activity implements View.OnClickListener{
 
     @Override
     public void onClick(View view) {
+        System.out.println("HELLO");
+        final Intent homeActivityIntent = new Intent(this, HomeActivity.class);
+
+//        Session.openActiveSession(this, true, new Session.StatusCallback() {
+//            @Override
+//            public void call(Session session, SessionState state, Exception exception) {
+//                if (state.isOpened()) {
+//                    System.out.println("HERE");
+//                    startActivity(homeActivityIntent);
+//
+//                } else {
+//                    System.out.println("ELSE");
+//                }
+//            }
+//        });
         Session.openActiveSession(this, true, new Session.StatusCallback() {
+
+            // callback when session changes state
             @Override
             public void call(Session session, SessionState state, Exception exception) {
-                if (state.isOpened()) {
-                    Log.i("your name", "oh we logged in");
+                if (session.isOpened()) {
+
+                    // make request to the /me API
+                    Request.newMeRequest(session, new Request.GraphUserCallback() {
+
+                        // callback after Graph API response with user object
+                        @Override
+                        public void onCompleted(GraphUser user, Response response) {
+                            if (user != null) {
+//                                TextView welcome = (TextView) findViewById(R.id.welcome);
+//                                welcome.setText("Hello " + user.getName() + "!");
+                                System.out.println("Hello" + user.getName());
+                                startActivity(homeActivityIntent);
+                            }
+                        }
+                    }).executeAsync();
                 }
             }
         });
+        System.out.println("LAST");
+    }
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        Session.getActiveSession().onActivityResult(this, requestCode, resultCode, data);
+    }
+    /**
+     * Logout From Facebook
+     */
+    public static void callFacebookLogout(Context context) {
+        Session session = Session.getActiveSession();
+        if (session != null) {
+
+            if (!session.isClosed()) {
+                session.closeAndClearTokenInformation();
+                //clear your preferences if saved
+            }
+        } else {
+
+            session = new Session(context);
+            Session.setActiveSession(session);
+
+            session.closeAndClearTokenInformation();
+            //clear your preferences if saved
+
+        }
+
     }
 }
